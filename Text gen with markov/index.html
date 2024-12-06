@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markov Chain Text Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Markov Chain Text Generator</h1> </br>
+    <p>Paste your text below, choose parameters, and generate text using a Markov Chain!</p> </br>
+    <textarea id="inputText" placeholder="Enter text to train the Markov chain"></textarea> </br>
+    <div>
+        <label for="order">Order (n):</label>
+        <input type="number" id="order" value="2" min="1">
+        <label for="length">Output Length:</label>
+        <input type="number" id="length" value="50" min="1">
+    </div>
+    </br>
+    <button onclick="generateText()">Generate Text</button> </br>
+    <div class="output" id="outputText"></div>
+    <script src="script.js"></script>
+</body>
+</html>
